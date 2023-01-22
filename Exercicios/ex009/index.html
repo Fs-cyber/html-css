@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras formatações</h1>
-    <h2>Código-Fonte/Pré-formatação</h2>
-    <p>O comando <cod>document.getElementByid('teste')</cod> é inscrito em JavaScript.</p> <!-- A TAG COD É USADA PARA FONTES MONOESPAÇADAS
-    PARA INSERIR A TAG COD RAPIDAMENTE DIGITE CTRL,P,ENVELOPAR,COD-->
-    <h2>Citações</h2>
-    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p> <!-- a tag q é para dar enfase a uma citação-->
-    <h2>Citações completas</h2>
-    <p>Segundo Steve Jobs, em uma de suas sitações:</p>
-    <blockquote>
-        Não deixe o barulho da opinião dos outros abafar sua voz interior. 
-        E mais importante, tenha a coragem de seguir seu coração e sua intuição. 
-        Eles de alguma forma já sabem o que você realmente quer se tornar. 
-        Tudo o mais é secundário.
-    </blockquote>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="1"> <!-- COLOCANDO O PARAMETRO DE TYPE TERA ALGUMAS OPÇÕES DE COMO FICARA SUA LISTA-->
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Almoçar</li>
+    </ol> <!-- A TAG OL É OBRIGATORIA-->
+    <h2>Listas não Ordenadas</h2>
+    <ul type="disc"> <!--disc,circle,square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Arroz</li>
+    </ul>
+    <h2>Listas de definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação do contéudo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavScript</dt>
+        <dd>Lingagem de programação para criação de interatividade de um site</dd>
+    </dl>
 </body>
 </html>
