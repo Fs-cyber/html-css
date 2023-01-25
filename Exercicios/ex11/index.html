@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente
+        aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/Foto-G.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Descrição do código</h1>
+    <p>Usando a tag picture e source a imagem fica dinamica para qualquer dispositivo</p>
+    <p>obs: só funciona na ordem de cima para baixo</p>
+    <h1> Reproduzindo Áudio</h1>
+    <P>Vamos aprender a reproduzir aúdios em HTML5.</P>
+    <audio src="midia/musicsite.mp3" controls autoplay></audio>
+    <h1>Descrição do código</h1>
+    <p>Para tocar um áudio mp3 é necessario colocar a tag áudio parametro controls autoplay</p>
+    <h1>Descrição do código</h1>
+    <p>Para outros midias types se digita a tag audio exclui o src e coloca source, com a tag preload=metadata autoplay controls</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/musicsite.mp3" type="audio/mpge">
+        <source src="midia/musicsite.mp3" type="audio/ogg">
+        <source src="midia/musicsite.mp3" type="audio/wav">
+    </audio>
+    </audio>
+
+</body>
+</html>
