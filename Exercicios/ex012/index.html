@@ -6,9 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vídeos com HTML5</title>
 </head>
-<h1>inserindo vídeos hospedados localmente</h1>
+<h1>inserindo Vídeos Hospedados Localmente</h1>
 <p>Este vídeo está hospedado no meu próprio servidor.</p>
-<video src="midia/meu-video.webm.m4v"></video>
+
 <body>
-</body>
+    <video width="560" poster="imagens/minimaldark.png" controls autoplay loop>
+        <source src="midia/meuvideo.mkv.mkv" type="video/mkv">
+        <source src="midia/meuvideo.mp4.m4v" type="video/mp4">
+        <source src="midia/meuvideo.ogv" type="video/ogv">
+        <source src="midia/meuvideo.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <h1>Inserindo Vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-QFZU78dy_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Descrição dos códigos</h1>
+    <p>Usando a tag video sem o SRC e adicionando a tag SOURCE SRC , assim você poderá colocar o vídeo no site com os formatos
+        MKV,WEBM,OGV,MP4. A tag WIDTH é para aumentar ou diminuir,CONTROL é para mostrar o player e o AUTO PLAY LOOP é para não parar.
+        Para colocar um vídeo do youtube basta procurar o video apertar em compartilhar e clicar em incorporar, copiar o código
+        e inserir no html. <mark>
+            obs: Ao colocar um video dentro do site hospedado localmente terá um consumo de dados do servido e isso acarretará em
+            um valor mais alto de banda, O indicado é pegar o vídeo colocar o no youtube e incoporar pois assim não irá consumir dados.
+        </mark></p>
+        <h1>Inserindo Vídeos do Vimeo</h1>
+        <iframe src="https://player.vimeo.com/video/476863648?h=aeba16e912&color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </html>
